@@ -4,13 +4,13 @@
   "description": "",
   "homepage": "https://techista1584.github.io/goit-js-hw-09",
   "scripts": {
-    "start":"parcel src/index.html",
+    "start":"parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-09/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/techista1584/goit-js-hw-09.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
