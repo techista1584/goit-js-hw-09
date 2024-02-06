@@ -8,19 +8,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../images/minimalist.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   color: #212121;
   line-height: 1.5;
 }
 
-p {
+.back {
   margin-bottom: 50px;
+  transition: color 250ms linear;
+  text-decoration: none;
+}
+.back:hover{
+  font-weight: 600;
+  color: rgb(252, 248, 6);
+
 }
 
-a {
-  text-decoration: none;
-  color: rgb(3, 36, 36);
-}
 
 .switcherBody {
   background-image: none;
