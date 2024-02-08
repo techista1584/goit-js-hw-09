@@ -44,16 +44,17 @@ ul {
 
 .funcList {
   display: inline-block;
-  margin: 2px;
+  margin: 4px;
   padding: 9px 10px;
   font-size: 18px;
   color: teal;
   border-radius: 9px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.556);
   transition: color 250ms linear, background-color 250ms linear;
   text-decoration: none;
   box-shadow: 3px 3px 3px rgb(162, 195, 195);
   font-weight: 500;
+  width: 173px;
 }
 
 .funcList:hover,
