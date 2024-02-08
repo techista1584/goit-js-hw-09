@@ -34,7 +34,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   /* This will take the full height of the viewport */
 }
 
@@ -69,9 +69,9 @@ img {
   max-width: 100%;
 }
 
-button {
+.btn{
   background-color: rgb(196, 216, 216);
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 15px 20px;
   border-color: rgba(226, 220, 220, 0.456);
   border-width: 1px;
@@ -82,28 +82,34 @@ button {
   color: teal;
   font-weight: 700;
   font-size: larger;
+  
 }
 
-button:hover,
-button:active {
+.btn:hover{
   background-color: rgb(87, 162, 162);
   color: aliceblue;
+  cursor: pointer;
 }
 
-button:focus{
+.btn:disabled{
   opacity: .5;
+  background-color: initial;
+  color: grey;
+  cursor:not-allowed;
 }
 
 
-.timer-wrap {
+.timer-form {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   flex-direction: row;
+  margin-bottom: 100px;
 }
 
 .picker {
-  margin: 0 10px 100px 0;
   height: 50px;
   text-align: center;
   font-size: large;
@@ -124,6 +130,7 @@ button:focus{
 
 .timer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   flex-direction: row;
@@ -161,12 +168,14 @@ button:focus{
   font-size: 15px;
 }
 
-.btn-start {
-  border-radius: 8px;
+.btn-startTimer {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
   margin: 0 20px;
   width: 140px;
   height: 50px;
-  background-color: #08ad6097;
+  background-color: #30ed95ea;
   color: black;
   text-transform: uppercase;
   border: 2px solid #a0a3a1;
@@ -176,24 +185,15 @@ button:focus{
   font-weight: 700;
 }
 
-.btn-start:disabled {
+.btn-startTimer:disabled {
   background-color: #f8f8f0;
   border: 2px solid #52d4ff;
   color: black;
   box-shadow: none;
+  opacity: 0.5;
+  cursor:not-allowed;
 }
 
-.btn-reload {
-  width: 180px;
-  height: 50px;
-  background-color: #087b7198;
-  border: 2px solid #a0a3a1;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: large;
-  font-weight: 700;
-  color: black;
-}
 
 .timer-input {
   padding: 8px 8px;
@@ -203,7 +203,7 @@ button:focus{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   height: 30vh;
 }
@@ -226,4 +226,20 @@ input {
 input:focus {
   color: #212121;
   box-shadow: 4px 4px 4px rgb(60, 75, 75);
+}
+
+.promise-label{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: left;
+  width:150px;
+  margin-left:10px;
+}
+
+.promise-labelList{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }

@@ -10,19 +10,21 @@
     <p><a class="back" href="index.html">Go back</a></p>
 
     <form class="form">
-      <label>
-        First delay (ms)
-        <input type="number" name="delay" required />
-      </label>
-      <label>
-        Delay step (ms)
-        <input type="number" name="step" required />
-      </label>
-      <label>
-        Amount
-        <input type="number" name="amount" required />
-      </label>
-      <button type="submit">Create promises</button>
+      <ul class="promise-labelList">
+        <label class="promise-label">
+          First delay (ms)
+          <input class="promise-input" type="number" name="delay" required />
+        </label>
+        <label class="promise-label">
+          Delay step (ms)
+          <input class="promise-input" type="number" name="step" required />
+        </label>
+        <label class="promise-label">
+          Amount
+          <input class="promise-input" type="number" name="amount" required />
+        </label>
+      </ul>
+      <button class="btn" type="submit">Create promises</button>
     </form>
 
     <script src="js/03-promises.js" type="module"></script>
