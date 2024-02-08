@@ -15,7 +15,6 @@ body {
 }
 
 .back {
-  margin-bottom: 50px;
   transition: color 250ms linear;
   text-decoration: none;
 }
@@ -25,16 +24,18 @@ body {
 
 }
 
-
 .switcherBody {
   background-image: none;
-  background-color: #7dd7ee;
+  background-color: #c0c4c5;
 }
 
 .button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* This will take the full height of the viewport */
 }
 
 ul {
@@ -51,7 +52,6 @@ ul {
   background-color: transparent;
   transition: color 250ms linear, background-color 250ms linear;
   text-decoration: none;
-  margin: 6px;
   box-shadow: 3px 3px 3px rgb(162, 195, 195);
   font-weight: 500;
 }
@@ -70,32 +70,29 @@ img {
 
 button {
   background-color: rgb(196, 216, 216);
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 15px 20px;
   border-color: rgba(226, 220, 220, 0.456);
   border-width: 1px;
   text-align: center;
   transition: all 0.3s ease 0s;
-  margin: 0 10px;
+  margin: 0 20px;
   box-shadow: 3px 3px 3px rgb(41, 40, 40);
   color: teal;
   font-weight: 700;
   font-size: larger;
 }
 
-button:hover {
+button:hover,
+button:active {
   background-color: rgb(87, 162, 162);
   color: aliceblue;
 }
 
-button:focus {
+button:focus{
   opacity: .5;
 }
 
-.back:hover {
-  font-weight: 700;
-  color: rgb(1, 100, 100);
-}
 
 .timer-wrap {
   display: flex;
@@ -105,12 +102,11 @@ button:focus {
 }
 
 .picker {
-  margin-bottom: 100px;
+  margin: 0 10px 100px 0;
   height: 50px;
   text-align: center;
   font-size: large;
   border-radius: 8px;
-  margin-left: 10px;
   cursor: pointer;
   border: 1px solid #648f9a;
   background-color: white;
@@ -179,7 +175,6 @@ button:focus {
 }
 
 .btn-start:disabled {
-  margin: 0 20px;
   background-color: #f2ee0770;
   border: 2px solid #52d4ff;
   color: black;
@@ -200,4 +195,34 @@ button:focus {
 
 .timer-input {
   padding: 8px 8px;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  height: 30vh;
+}
+
+label{
+  margin: 5px;;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  width: 150px;
+  border-color: #08ad13ee;
+  border-radius: 5px;
+  color: rgb(2, 36, 36);
+  text-align: center;
+  box-shadow: 3px 3px 3px rgb(162, 195, 195);
+}
+
+input:focus {
+  background-color:rgba(169, 243, 10, 0.895);
+  color: #212121;
+  box-shadow: 4px 4px 4px rgb(60, 75, 75);
 }
