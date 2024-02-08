@@ -150,7 +150,7 @@ button:focus{
 }
 
 .value.end {
-  color: rgba(5, 204, 184, 0.789);
+  color: rgb(5, 159, 17);
 }
 
 .label {
@@ -216,13 +216,12 @@ input {
   width: 150px;
   border-color: #08ad13ee;
   border-radius: 5px;
-  color: rgb(2, 36, 36);
+  color: rgb(10, 245, 76);
   text-align: center;
   box-shadow: 3px 3px 3px rgb(162, 195, 195);
 }
 
 input:focus {
-  background-color:rgba(169, 243, 10, 0.895);
   color: #212121;
   box-shadow: 4px 4px 4px rgb(60, 75, 75);
 }
