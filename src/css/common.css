@@ -177,7 +177,7 @@ button:focus{
 }
 
 .btn-start:disabled {
-  background-color: #f2ee0770;
+  background-color: #f8f8f0;
   border: 2px solid #52d4ff;
   color: black;
   box-shadow: none;
@@ -218,7 +218,7 @@ input {
   width: 150px;
   border-color: #08ad13ee;
   border-radius: 5px;
-  color: rgb(10, 245, 76);
+  color: rgb(7, 8, 7);
   text-align: center;
   box-shadow: 3px 3px 3px rgb(162, 195, 195);
 }
