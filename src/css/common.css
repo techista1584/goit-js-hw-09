@@ -166,7 +166,7 @@ button:focus{
   margin: 0 20px;
   width: 140px;
   height: 50px;
-  background-color: #29ad08;
+  background-color: #08ad6097;
   color: black;
   text-transform: uppercase;
   border: 2px solid #a0a3a1;
@@ -186,7 +186,7 @@ button:focus{
 .btn-reload {
   width: 180px;
   height: 50px;
-  background-color: #1bf5e398;
+  background-color: #087b7198;
   border: 2px solid #a0a3a1;
   border-radius: 8px;
   cursor: pointer;
