@@ -112,6 +112,7 @@ button:focus{
   background-color: white;
   outline: none;
   font-weight: 700;
+  width: 250px;
 }
 
 .picker:disabled {
